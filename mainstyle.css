@@ -58,9 +58,6 @@ a:hover {
 .bold {
   font-weight: bold;
 }
-nav {
-  /* margin-bottom: 2.5rem; */
-}
 .nav-main > li {
   float: left;
   padding-right: 36px;
@@ -120,6 +117,15 @@ body nav > ul > li {
   height: 325px !important;
   border-top: 1px solid #dcdcdc;
   border-bottom: 1px solid #dcdcdc;
+}
+.nav-Images {
+  display: flex;
+}
+.rollingImages {
+  margin-right: 10px;
+}
+.rollingImages:last-child{
+  margin-right: 0px;
 }
 .rollingImages:hover {
   animation: rotate_image 3s linear infinite;
