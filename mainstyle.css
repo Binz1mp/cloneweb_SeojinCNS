@@ -27,6 +27,13 @@ header:hover {
 header:hover li > a {
   color: #737373;
 }
+.downed {
+  background-color: rgb(255, 255, 255);
+  transition: background-color 0.35s ease-in-out;
+}
+.downed nav ul li > a {
+  color: #737373;
+}
 .logos {
   margin-right: 3rem;
 }
@@ -37,6 +44,7 @@ header:hover li > a {
   top: 50%;
   transform: translate(0, -50%);
   transition: 0.3s ease;
+  content: url(images/logo/logo_white.png);
 }
 ul, li {
   margin: 0;
@@ -89,6 +97,25 @@ body nav > ul > li {
   top: 104px;
   left: 0;
   transition: 0.3s ease;
+}
+.whitebox-contents {
+  display: none;
+  margin-top: 3rem;
+  margin-left: 2rem;
+  color: #333;
+  font-weight: bold;
+}
+/* .whitebox-contents-image {
+  background-image: url(images/menu_img.jpg);
+  background-repeat: no-repeat;
+  height: 240px;
+  width: 30%;
+}
+.whitebos-contents-text {
+  text-align: center;
+} */
+.visible {
+  display: block;
 }
 .on {
   height: 325px !important;
