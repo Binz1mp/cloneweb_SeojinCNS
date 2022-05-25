@@ -2,15 +2,14 @@ body{
   background-color: rgb(82, 85, 107);
   color: antiquewhite;
   height: 5000px;
+  margin: 0;
 }
 .mainBackgroundImage {
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   object-fit: cover;
+  z-index: -1;
 }
 header {
   padding-top: 1.5rem;
@@ -31,8 +30,13 @@ header:hover {
 header:hover li > a {
   color: #737373;
 }
-#mainlogo {
+#mainlogo img {
   margin-right: 50px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  transition: 0.3s ease;
 }
 ul, li {
   margin: 0;
@@ -98,4 +102,27 @@ body nav > ul > li {
 /* 한 메뉴로 전체 다 열고싶을때 */
 header:hover .nav-dropdown {
   display: block;
+}
+
+
+
+
+main {
+  position:relative;
+}
+.mainSections {
+  width: 100vw;
+  height: 100vh;
+}
+.mainContents {
+  padding-top: 6rem;
+}
+#sectionA {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#sectionB {
+  background-color: #333;
+}
+#sectionC {
+  background-color: rgb(139, 139, 139);
 }
