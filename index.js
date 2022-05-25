@@ -43,8 +43,14 @@ window.addEventListener("wheel", function(e) {
 });
 function doScroll(scroll) {
   console.log(scroll);
-  scroll = scroll < 0 ? 0 : scroll;
-  scroll = scroll > sectionsLength - 1 ? sectionsLength - 1 : scroll;
+  // scroll = scroll < 0 ? 0 : scroll;
+  if (scroll < 0) {
+    scroll = 0;
+  }
+  // scroll = scroll > sectionsLength - 1 ? sectionsLength - 1 : scroll;
+  if (scroll > sectionsLength - 1) {
+    scroll = sectionsLength - 1
+  }
   scrolls = scroll;
   sections[scrolls].scrollIntoView ({
     block: "start", inline: "start", behavior: "smooth"
